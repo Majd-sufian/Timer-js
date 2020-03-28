@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Timer</title>
+   <link rel="stylesheet" href="timer.css">
+ </head>
+ <body>
+   <div id="MyClockDisplay" class="clock"></div>
+
+
+
+   <script type="text/javascript">
+
+const showtime = () => {
+
+const date = new Date();
+const h = date.getHours();
+const m = date.getMinutes();
+const s = date.getSeconds();
+
+const Timer = `${h}:${m}:${s}`;
+// console.log(Timer);
+const timesSec = 1
+// console.log('ddddd' + 1);
+for(let i = 0; i > 0; i++){
+  // console.log()
+}
+
+const time = document.querySelector('#MyClockDisplay');
+time.innerHTML = '';
+
+const output = `<h1>Time Now</h1>
+<p>${Timer}</p>`
+time.insertAdjacentHTML('beforeend', output);
+
+setTimeout(showtime, 10);
+}
+
+showtime();
+// showtime();
+const numbers = [10, 4, 1, 2, 8, 91];
+console.log(Math.min(...numbers));
+const minNumber = Math.min(...numbers)
+const maxNumber = Math.max(...numbers)
+console.log(minNumber);
+console.log(maxNumber);
+console.log(minNumber - maxNumber);
+   </script>
+ </body>
+ </html>
+
